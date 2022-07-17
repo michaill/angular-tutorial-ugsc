@@ -1,0 +1,14 @@
+<h1>
+    Book list
+    <button routerLink="./edit/new" class="tools">Add new</button>
+</h1>
+<article *ngFor="let book of books">
+    <h2>{{book.name}} <small>(&copy;{{book.year}} {{book.author}})</small></h2>
+    <section>
+        <p>ISBN: {{book.isbn}}</p>
+    </section>
+    <ul class="tools">
+        <li [routerLink]="['./edit', book.id]">Edit</li>
+        <li [routerLink]="['./translate', book.id]">Translate</li>
+    </ul>
+</article>

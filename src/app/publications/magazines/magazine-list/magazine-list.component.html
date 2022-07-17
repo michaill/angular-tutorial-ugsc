@@ -1,0 +1,14 @@
+<h1>
+    Magazines list
+    <button routerLink="./edit/new" class="tools">Add new</button>
+</h1>
+<article *ngFor="let magazine of magazines">
+    <h2>{{magazine.name}} <small>(&copy;{{magazine.year}} {{magazine.author}})</small></h2>
+    <section>
+        <p>Periodicity: {{magazine.periodicity}}</p>
+    </section>
+    <ul class="tools">
+        <li [routerLink]="['./edit', magazine.id]">Edit</li>
+        <li [routerLink]="['./translate', magazine.id]">Translate</li>
+    </ul>
+</article>

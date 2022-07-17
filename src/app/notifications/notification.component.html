@@ -1,0 +1,3 @@
+<div *ngFor="let n of notifications; let i = index" [ngClass]="n.type" (click)="remove(i)">
+    {{n.text}}
+</div>

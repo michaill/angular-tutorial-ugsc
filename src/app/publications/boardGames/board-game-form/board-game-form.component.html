@@ -1,0 +1,14 @@
+<ng-container *ngIf="(item$ | async) as item">
+    <h2 *ngIf="isNew else editTitle">Add new board game</h2>
+    <ng-template #editTitle><h2>Edit board game: {{item.name}}</h2></ng-template>
+
+    <form *ngIf="form" [formGroup]="form">
+        <app-publication-data formControlName="publication"></app-publication-data>
+
+        <label for="minPlayers">Min. players: <input type="number" id="minPlayers" formControlName="minPlayers" /></label>
+
+        <label for="maxPlayers">Max. players: <input type="number" id="maxPlayers" formControlName="maxPlayers" /></label>
+
+        <button (click)="save()">{{(isNew ? 'Save new' : 'Save changes')}}</button>
+    </form>
+</ng-container>

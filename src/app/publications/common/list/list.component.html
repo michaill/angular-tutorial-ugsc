@@ -1,0 +1,17 @@
+<ng-content></ng-content>
+
+<article *ngFor="let item of items">
+    <h2>{{item.name}} <small>(&copy;{{item.year}} {{item.author}})</small></h2>
+
+    <p>{{item.description}}</p>
+
+    <section *ngIf="customDetail">
+        <ng-container *ngTemplateOutlet="customDetail; context: { item }"></ng-container>
+    </section>
+
+    <ul class="tools">
+        <li [routerLink]="['../edit', item.id]">Edit</li>
+        <li [routerLink]="['../edit2', item.id]">Edit2</li>
+        <li [routerLink]="['../translate', item.id]">Translate</li>
+    </ul>
+</article>

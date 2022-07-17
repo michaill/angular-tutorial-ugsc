@@ -1,0 +1,10 @@
+<app-publications-list [items]="items" [customDetail]="customDetail">
+    <h1>
+        Book list
+        <button routerLink="../edit2/new" class="tools">Add new</button>
+    </h1>
+</app-publications-list>
+
+<ng-template #customDetail let-data="item">
+    <p>ISBN: {{data.isbn}}</p>
+</ng-template>

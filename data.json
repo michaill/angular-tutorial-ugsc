@@ -1,0 +1,88 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Test 1 + 1 ",
+      "author": "Ja",
+      "year": 2022,
+      "isbn": "1"
+    },
+    {
+      "id": 2,
+      "name": "Test 2",
+      "author": "Ja",
+      "year": 2022,
+      "isbn": "2"
+    },
+    {
+      "name": "Test 3",
+      "author": "Ja",
+      "year": 2022,
+      "isbn": "3",
+      "id": 3
+    },
+    {
+      "name": "Test 4",
+      "author": "On",
+      "year": 2022,
+      "description": "Test 4 description and 3 lined description",
+      "isbn": "4",
+      "id": 4
+    }
+  ],
+  "boardGames": [
+    {
+      "name": "Game 1",
+      "author": "Ja",
+      "year": 2022,
+      "minPlayers": 2,
+      "maxPlayers": 8,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Game 2",
+      "author": "Ja",
+      "year": 2022,
+      "minPlayers": 1,
+      "maxPlayers": 4
+    }
+  ],
+  "magazines": [
+    {
+      "id": 1,
+      "name": "Magazine 1",
+      "author": "Michal",
+      "year": 2021,
+      "periodicity": "year"
+    },
+    {
+      "id": 2,
+      "name": "Magazine 2",
+      "author": "Michal",
+      "year": 2022,
+      "periodicity": "year"
+    },
+    {
+      "id": 3,
+      "name": "Magazine 3 + 3",
+      "author": "Michal",
+      "year": 2023,
+      "periodicity": "year"
+    },
+    {
+      "id": 4,
+      "name": "Magazine 4",
+      "author": "Michal",
+      "year": 2024,
+      "periodicity": "year"
+    },
+    {
+      "id": 5,
+      "name": "Magazine 5",
+      "author": "Michal",
+      "year": 2025,
+      "periodicity": "year"
+    }
+  ]
+}

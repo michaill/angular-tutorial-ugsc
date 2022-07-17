@@ -1,0 +1,4 @@
+<h1 *ngIf="c$">{{a.value}} + {{b.value}} = {{c$ | async}}</h1>
+
+<label for="a">A <input type="number" id="a" [formControl]="a" /></label>
+<label for="b">B <input type="number" id="b" [formControl]="b" /></label>

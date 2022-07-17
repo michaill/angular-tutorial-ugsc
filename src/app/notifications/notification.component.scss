@@ -1,0 +1,23 @@
+:host {
+    position: fixed;
+    right: 1.6rem;
+    bottom: 1.6rem;
+    width: 24rem;
+
+    & > div {
+        width: 100%;
+        padding: 1.6rem;
+        margin-top: 1.6rem;
+        text-align: center;
+
+        &.info {
+            background-color: #29b429;
+        }
+        &.warning {
+            background-color: #f7b21e;
+        }
+        &.error {
+            background-color: #b42929;
+        }
+    }
+}

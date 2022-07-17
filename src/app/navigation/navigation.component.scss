@@ -1,0 +1,17 @@
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 3.2rem 0;
+    width: 100%;
+    justify-content: center;
+
+    & > li {
+        margin: 0 1.6rem;
+        font-size: 2.4rem;
+
+        &.active {
+            font-weight: 700;
+        }
+    }
+}

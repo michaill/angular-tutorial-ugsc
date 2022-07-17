@@ -1,0 +1,11 @@
+<app-publications-list [items]="items" [customDetail]="customDetail">
+    <h1>
+        Board games list
+        <button routerLink="../edit2/new" class="tools">Add new</button>
+    </h1>
+</app-publications-list>
+
+<ng-template #customDetail let-data="item">
+    <p>Min. players: {{data.minPlayers}}</p>
+    <p>Max. players: {{data.maxPlayers}}</p>
+</ng-template>

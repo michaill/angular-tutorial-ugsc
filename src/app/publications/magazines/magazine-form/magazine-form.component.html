@@ -1,0 +1,19 @@
+<ng-container *ngIf="(item$ | async) as item">
+    <h2 *ngIf="isNew else editTitle">Add new magazine</h2>
+    <ng-template #editTitle><h2>Edit magazine: {{item.name}}</h2></ng-template>
+
+    <form *ngIf="form" [formGroup]="form">
+        <label for="name">Name: <input type="text" id="name" formControlName="name" /></label>
+
+        <label for="author">Author: <input type="text" id="author" formControlName="author" /></label>
+
+        <label for="year">Year: <input type="number" id="year" formControlName="year" /></label>
+
+        <label for="periodicity">Periodicity: <select id="periodicity" formControlName="periodicity">
+            <option [value]="null" disabled>Select period</option>
+            <option *ngFor="let option of periodicity" [value]="option">{{option}}</option>
+        </select></label>
+
+        <button (click)="save()">{{(isNew ? 'Save new' : 'Save changes')}}</button>
+    </form>
+</ng-container>

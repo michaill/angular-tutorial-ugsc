@@ -1,0 +1,9 @@
+<ng-container [formGroup]="form">
+    <label for="name">Name: <input type="text" id="name" formControlName="name" /></label>
+
+    <label for="author">Author: <input type="text" id="author" formControlName="author" /></label>
+
+    <label for="year">Year: <input type="number" id="year" formControlName="year" /></label>
+
+    <label for="description">Description: <textarea id="description" formControlName="description" appTextareaAutosize></textarea></label>
+</ng-container>

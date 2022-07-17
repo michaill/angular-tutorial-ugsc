@@ -1,0 +1,16 @@
+<ng-container *ngIf="(item$ | async) as item">
+    <h2 *ngIf="isNew else editTitle">Add new book</h2>
+    <ng-template #editTitle><h2>Edit book: {{item.name}}</h2></ng-template>
+
+    <form *ngIf="form" [formGroup]="form">
+        <label for="name">Name: <input type="text" id="name" formControlName="name" /></label>
+
+        <label for="author">Author: <input type="text" id="author" formControlName="author" /></label>
+
+        <label for="year">Year: <input type="number" id="year" formControlName="year" /></label>
+
+        <label for="isbn">ISBN: <input type="text" id="isbn" formControlName="isbn" /></label>
+
+        <button (click)="save()">{{(isNew ? 'Save new' : 'Save changes')}}</button>
+    </form>
+</ng-container>
