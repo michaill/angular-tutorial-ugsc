@@ -9,7 +9,7 @@ export class MagazineService {
     private readonly endpointName = 'magazines/';
 
     constructor(private http: HttpClient) {
-        console.log("magazine service instanciated");
+        console.log("magazine service instantiated");
     }
 
     getAll(): Observable<Magazine[]> {
