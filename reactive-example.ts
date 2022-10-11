@@ -6,3 +6,5 @@ ra = 3;
 rb = 4;
 console.log('a and b modified');
 console.log('a', ra, 'b', rb, 'c', rc());
+
+//toto je zmena z branche feature/alzatest
